@@ -1,0 +1,10 @@
+[Unit]
+Description=Condition-Monitoring Mqtt logger application for Asarad company by IroTeam dev team: AliAhmadi9371@gmail.com (+989126470868)
+After=network.target
+After=network-manager.service
+
+[Service]
+ExecStart=sudo /home/ali/mqtt-cm_logger/app.sh
+
+[Install]
+WantedBy=multi-user.target
